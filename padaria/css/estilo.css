@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+ header {
+  width: 100%;
+  background-color: rgba(255, 16, 16, 0.911);
+  display: flex;
+  justify-content: space-between;
+
+}
+
+h1.fonte{
+
+  text-align: center;
+  color: blue; 
+  background-color: rgb(9, 157, 243);
+  
+}
+
+
+body {
+
+   background-color: darkgrey;
+}
+
+p { 
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 30px;
+  color: black;
+}
+footer p {    
+    background-color:rgb(24, 24, 23);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgba(246, 246, 248);    
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    margin-top: 10px;
+    justify-content: space-around;
+    
+}
+  .menu li{
+   
+  display: inline-block;
+  margin: 0 10px; 
+
+}
+  .menu li a{
+
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 15px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
+  
+}
+.menu li a:hover{  
+
+background-color: yellow;
+
+}
+
+#titulo{
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(253, 8, 8);
+  margin-left: 10%;
+}

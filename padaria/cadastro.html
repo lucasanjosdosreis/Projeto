@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/> 
+  <link href="css/estilo.css" rel="stylesheet">   
+  <title>Cadastro</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap'); 
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  
+  }
+  body {
+    background-image: url(img/top.jpg);
+    background-color:  darkgrey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+  }    
+  .form{
+
+    font-size: 20px;
+    text-align: left;
+    background-color: cornflowerblue;
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #222;
+    border-radius: 10px;
+    margin-top: 50px;
+  
+  }
+  input, select{
+      border-radius: 10px;
+      height: 30px;
+      border: none;  
+  }
+  input[type="submit"]{
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      width:  80px;
+      height: 35px;
+  }
+  input[type="button"]{
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      width:  80px;
+      height: 35px;
+  }
+  input[type="submit"]:hover{
+    background: darkgreen;
+    color: darkred;
+  }
+  input[type="button"]:hover{
+    background: darkred;
+    color: darkslategrey;
+  }
+   
+
+  body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: brown;
+    }        
+    p {
+      font-family: 'Festive', cursive;
+      font-size: 50px;
+      text-align: center;
+      color: black;
+  } 
+   h2 { 
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+  }
+
+  </style> 
+</head>
+<body>   
+  <header>    
+      <img src="Img/logo.png" width="300" height="200">        
+
+    <div class="menu">
+       <ul>
+         <li><a href="index.html">Sobre</a></li>
+         <li><a href="produtos.html">Produtos</a></li>
+         <li><a href="cadastro.html">Cadastro</a></li> 
+       </ul>
+    </div>
+    </header>       
+  <div>
+    <h1 id="titulo">Novo Cadastro</h1>       
+  </div>
+<form>
+  <div class="form">
+    <fieldset>
+      <legend>Novo Cliente</legend>
+      <div>      
+        <label for="nome"><strong>Nome:</strong></label>
+        <input type="text" name="nome" id="nome"required/>
+      </div> 
+        <div>
+        <label for="sobrenome"><strong>Sobre Nome:</strong></label> 
+        <input type="text" name="nome" id="nome"required/>
+      </div>
+      <div>
+        <label for="cidade"><strong>Cidade:</strong></label> 
+        <input type="text" name="cidade" id="cidade"required/>
+      </div>
+
+      <div>
+        <label for="endereco"><strong>Endereço:</strong></label> 
+        <input type="text" name="endereco" id="endereco"required/>
+      </div>
+
+
+      <div>           
+            <label for="telefone"><strong>Telefone:</strong></label> 
+            <input type="text" name="telefone" id="telefone" required/>
+      </div> 
+
+      <div>
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" name="email" id="email" required/>      
+    </div>
+    
+    <div>
+      <label for="Data"><strong>Data de Nascimento:</strong></label>
+      <input type="date" name="data" id="data" required/><br>
+    </div> 
+    <div>
+      <label for="estados" ><strong>Estados Brasileiros</strong></label>
+      <select id="Estados" name ="Estados" value ="Estados" required> 
+            <option>Acre - AC</option> 
+            <option>Alagoas - AL</option>   
+            <option>Amapá - AP</option>   
+            <option>Amazonas - AM</option>   
+            <option>Bahia - BA</option>   
+            <option>Ceará - CE</option>   
+            <option>Espírito Santo - ES</option>   
+            <option>Goiás - GO</option>   
+            <option>Maranhão - MA</option>
+            <option>Mato Grosso - MT</option>   
+            <option>Mato Grosso do Sul - MS</option>   
+            <option>Minas Gerais - MG</option>      
+            <option>Pará - PA</option>   
+            <option>Paraíba - PB</option>   
+            <option>Paraná - PR</option>   
+            <option>Pernambuco - PE</option>   
+            <option>Piauí - PI</option>   
+            <option>Rio de Janeiro - RJ</option>   
+            <option>Rio Grande do Norte - RN</option>   
+            <option>Rio Grande do Sul - RS</option>   
+            <option>Rondônia - RO</option>   
+            <option>Roraima - RR</option>   
+            <option>Santa Catarina - SC</option>   
+            <option>São Paulo - SP</option>   
+            <option>Sergipe - SE</option>   
+            <option>Tocantins - TO</option>   
+            <option>Distrito Federal - DF</option>          
+        </select>
+    </div> 
+    <fieldset >
+      <div>
+          <label><strong>Lista de Produtos</strong></label>
+          <input type="checkbox" id="produto" name="produto" value="doce">
+          <label for="produtos1">Doce</label>
+          <input type="checkbox" id="produto" name="produto" value="suco">
+          <label for="produtos1">Suco</label>
+          <input type="checkbox" id="produto" name="produto" value="ovo">
+          <label for="produtos1">Ovo</label>
+          <input type="checkbox" id="produto" name="produto" value="bala">
+          <label for="produtos1">Bala</label>
+          <input type="checkbox" id="produto" name="produto" value="sorvete">
+          <label for="produtos1">Sorvete</label>
+      </fieldset> 
+  </div>
+  <div>         
+    <input type="button" value="Enviar">  &nbsp;
+    <input type="button" value="Voltar">  &nbsp;
+ </div>  
+</form>  
+    <footer>
+    <p>Nome: Lucas Anjos dos Reis <br> Cidade: Mogi das Cruzes - SP <br> Email: lucasanjosdosreis@yahoo.com <br>Telefone: (11)0000x0000x00x00</P>
+    </footer> 
+</body>
+</html>
